@@ -6,15 +6,29 @@ media_folder: "public/static/uploads"
 public_folder: "static/uploads"
 
 collections:
-  - name: "question"
-    label: "Question"
-    folder: content/collections"
+  - label: "JZF"
+    name: "jzf"
+    folder: content/jzf"
     create: true
     slug: "{{slug}}"
-    identifier_field: "question"
     extension: "json"
+    widget: "list"
     fields:
       - { label: "Question", name: "question", widget: "string" }
       - { label: "a", name: "a", widget: "string" }
+      - { label: "a", name: "a", widget: "boolean" }
       - { label: "b", name: "b", widget: "string" }
+      - { label: "a", name: "b", widget: "boolean" }
       - { label: "c", name: "c", widget: "string" }
+      - { label: "a", name: "c", widget: "boolean" }
+  
+  - label: "MAD"
+    name: "mad"
+    folder: content/mad"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    widget: "list"
+    fields:
+      - { label: "Question", name: "question", widget: "string" }
+      - { label: "Answer", name: "answer", widget: "string" }
