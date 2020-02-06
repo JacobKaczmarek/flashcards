@@ -13,14 +13,15 @@ collections:
     slug: "{{slug}}"
     extension: "json"
     widget: "list"
+    allow_add: true
     fields:
       - { label: "Question", name: "question", widget: "string" }
       - { label: "a", name: "a", widget: "string" }
-      - { label: "a", name: "a", widget: "boolean" }
+      - { label: "a is correct", name: "aCorrect", widget: "boolean" }
       - { label: "b", name: "b", widget: "string" }
-      - { label: "a", name: "b", widget: "boolean" }
+      - { label: "b is correct", name: "bCorect", widget: "boolean" }
       - { label: "c", name: "c", widget: "string" }
-      - { label: "a", name: "c", widget: "boolean" }
+      - { label: "c is correct", name: "cCorrect", widget: "boolean" }
   
   - label: "MAD"
     name: "mad"
@@ -29,6 +30,7 @@ collections:
     slug: "{{slug}}"
     extension: "json"
     widget: "list"
+    allow_add: true
     fields:
       - { label: "Question", name: "question", widget: "string" }
       - { label: "Answer", name: "answer", widget: "string" }
